@@ -28,8 +28,6 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
-		requestWindowFeature(Window.FEATURE_NO_TITLE);
-		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		setContentView(R.layout.main);
 		
 		this.webview = (WebView)findViewById(R.id.webview);
@@ -69,7 +67,7 @@ public class MainActivity extends Activity {
 				alertDialog.show();
 			}
 		});
-		webview.loadUrl("http://noty.aws.af.cm");
+		webview.loadUrl("http://noty.aws.af.cm/index.php?id=1");
 	}
 
 	@Override
