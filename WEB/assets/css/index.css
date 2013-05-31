@@ -1,0 +1,88 @@
+body{
+    background: #403937;
+    /* background-image: url("../img/pattern.jpg"); */
+    color: #ffffff;
+    font-family: Calibri;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+div#container{
+    width: 100%;
+}
+div#header{
+    height: 100px;
+    background-image: url("../img/header.png");
+    vertical-align: middle;
+}
+div#content{
+    text-align: center;
+}
+div#header_container{
+    margin: 0 auto;
+    width: 960px;
+    vertical-align: middle;
+}
+div#header_container img{
+    vertical-align: middle;
+}
+div#header_tabs_container{
+    display: inline-block;
+    padding-right: 50px;
+    width: 750px;
+    text-align: right;
+}
+div.header_tabs_divs{
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    color: #4b4443;
+    border-radius: 5px;
+    padding:10px 10px;
+   /* background-color: #90e8ff; */
+}
+div.header_tabs_divs_active{
+    display: inline-block;
+    color: #000000;
+    font-weight: bold;
+    border-radius: 5px;
+    padding:10px 10px;
+    background-color: #90e8ff;
+}
+#blue_notification_message_box{
+    position: relative;
+    margin: 0 auto;
+    padding: 15px 15px 15px 15px;
+    font-weight: bold;
+    font-size: 12px;
+    color: #264c72;
+    border: 1px solid #97c1da;
+    border-radius: 3px;
+    background-color: #d0e3ef;
+    background-image: -moz-linear-gradient(#d8ebf8, #d0e3ef);
+    background-image: -webkit-linear-gradient(#d8ebf8, #d0e3ef);
+    background-image: linear-gradient(#d8ebf8, #d0e3ef);
+    background-repeat: repeat-x;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+    text-align: center;
+}
+#red_notification_message_box
+{   position: relative;
+    margin: 0 auto;
+    padding: 15px 15px 15px 15px;
+    font-weight: bold;
+    font-size: 12px;
+    color: #9c2400;
+    border: 1px solid #da9797;
+    border-radius: 3px;
+    background-color: #efd0d0;
+    background-image: -moz-linear-gradient(#f8d8d8, #efd0d0);
+    background-image: -webkit-linear-gradient(#f8d8d8, #efd0d0);
+    background-image: linear-gradient(#f8d8d8, #efd0d0);
+    background-repeat: repeat-x;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+    text-align: center;
+}
