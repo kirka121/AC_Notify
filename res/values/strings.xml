@@ -5,7 +5,7 @@
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     <string name="progress_dialog_title">Notify</string>
-    <string name="progress_dialog_description">Is Loading...</string>
+    <string name="progress_dialog_description">Is Loading. Please wait...</string>
     <string name="log_processing_webview">Processing webview url click...</string>
     <string name="log_finished_loading_webview">Finished loading URL: </string>
     <string name="log_error">Error: </string>

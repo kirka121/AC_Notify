@@ -1,5 +1,4 @@
 <?php
-include_once("config.php");
 class dbOperations {
 // class responsible for all the database operations. all your queries should be here.
 	function getHtml($query){

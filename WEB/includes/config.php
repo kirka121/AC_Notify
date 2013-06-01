@@ -1,4 +1,9 @@
 <?php
+// \/ includes
+include_once("database.php");
+include_once("notification_boxes/red_notification_box.php");
+include_once("notification_boxes/blue_notification_box.php");
+
 if(getenv("VCAP_SERVICES")){
  	//if in webserver with vpcap services
 	$services_json = json_decode(getenv("VCAP_SERVICES"),true);
@@ -21,7 +26,11 @@ if(getenv("VCAP_SERVICES")){
 	define("CONNECTION_DB", "notify");
 }
 
-
-
+// \/ set up constant for the ANDROID_ID -> used by session
+if(isset($_GET['id']) && $_GET['id'] != null){
+	// plaeholder. will set session value to equal android id
+} else{
+	// placeholder. will set session value to "00" for defaults when there is no id.
+}
 
 ?>
