@@ -36,20 +36,3 @@ div#header_tabs_container{
     text-align: right;
     margin-left: 150px;
 }
-div.header_tabs_divs{
-    font-size: 16px;
-    font-weight: bold;
-    display: inline-block;
-    color: #4b4443;
-    border-radius: 5px;
-    padding:10px 10px;
-   /* background-color: #90e8ff; */
-}
-div.header_tabs_divs_active{
-    display: inline-block;
-    color: #000000;
-    font-weight: bold;
-    border-radius: 5px;
-    padding:10px 10px;
-    background-color: #90e8ff;
-}

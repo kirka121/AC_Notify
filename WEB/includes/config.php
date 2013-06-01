@@ -3,6 +3,7 @@
 include_once("database.php");
 include_once("notification_boxes/red_notification_box.php");
 include_once("notification_boxes/blue_notification_box.php");
+include_once("header_tabs/tab.php");
 
 if(getenv("VCAP_SERVICES")){
  	//if in webserver with vpcap services
