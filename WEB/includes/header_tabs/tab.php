@@ -19,6 +19,7 @@ div.header_tabs_divs_active{
 </style>
 <?php
 class tab{
+	// \/ builds a link string based on provided title, <a> tag wrapping a <div>. 
 	function create($title){
 		echo "<a href='index.php?op=".$title."'>";
 		echo "<div ";
