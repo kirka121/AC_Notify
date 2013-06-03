@@ -24,7 +24,11 @@ class db_operations{
 		$result = mysql_query($query, $this->connection);
 		// \/ return the result in an array
 		while($row = mysql_fetch_array($result)){
-			return $row['profile_html'];
+			if(!$this->check_custom_profile($id)){
+				return $row['profile_html'];
+			}else{
+				return $row['custom_profile_html'];
+			}
 		}
 		// \/ close connection
 		$this->close_connection();
