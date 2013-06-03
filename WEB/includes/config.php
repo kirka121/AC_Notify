@@ -1,12 +1,7 @@
 <?php
-// \/ includes
-include_once("database.php");
-include_once("notification_boxes/red_notification_box.php");
-include_once("notification_boxes/blue_notification_box.php");
-include_once("header_tabs/tab.php");
 
 if(getenv("VCAP_SERVICES")){
- 	//if in webserver with vpcap services
+ 	//for webserver with vpcap services
 	$services_json = json_decode(getenv("VCAP_SERVICES"),true);
 	$mysql_config = $services_json["mysql-5.1"][0]["credentials"];
 	$username = $mysql_config["username"];
@@ -20,7 +15,7 @@ if(getenv("VCAP_SERVICES")){
 	define("CONNECTION_PASS", "$password");
 	define("CONNECTION_DB", "$db");
 } else {
-	//if local testing
+	//for local testing
 	define("CONNECTION_SERVER", "localhost");
 	define("CONNECTION_USER", "website");
 	define("CONNECTION_PASS", "9doggy9");
@@ -34,4 +29,10 @@ if(isset($_GET['id']) && $_GET['id'] != null){
 	// placeholder. will set session value to "00" for defaults when there is no id.
 }
 
+// \/ includes
+include_once("database.php");
+include_once("notification_boxes/red_notification_box.php");
+include_once("notification_boxes/blue_notification_box.php");
+include_once("header_tabs/tab.php");
+include_once("session.php");
 ?>

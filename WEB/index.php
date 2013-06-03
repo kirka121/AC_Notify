@@ -1,6 +1,18 @@
+<!--
+	Prject: 		AC Notify [ Algonquin College Notify - Open source version of NiTec Classroom Portal ]
+	Developers: 	Kirill Afanasenko, 
+					Thom Palmer, 
+					Adam Etherington
+	Technologies:	Android 4.0.3 Ice Cream Sandwitch 
+					PHP 5.4.7
+					jQuery 1.9.1
+					MySql 5.2
+	GitHub Repo: 	https://github.com/kirka121/AC_Notify
+	Version: 		1.0.12
+-->
 <?php 
 include_once("includes/config.php");
-error_reporting(E_ALL); //allow error reporting in case webserver's default prevents it
+error_reporting(E_ALL); 	//allow error reporting in case webserver's default prevents it
 ?>
 <html>
 	<head>
@@ -20,8 +32,6 @@ error_reporting(E_ALL); //allow error reporting in case webserver's default prev
 						<?php 
 							$tab->create('home');
 							$tab->create('navigation'); 
-							$tab->create('placeholder');
-							$tab->create('admin');
 						?>
 					</div>
 				</div>

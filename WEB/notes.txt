@@ -1,0 +1,32 @@
+notes:
+
+lena, penny; in charge of the marketing.
+
+key necessities:
+- contract of scope
+- stuff that patientway has in order to do routing
+- very generic, for hi-rise or commercial set ups
+- monitor the usage of the devices to gather information about best use cases (LOG ALL THE THINGS!!!) 
+
+extra:
+- front page needs to be either a time table or a generic sign / html
+- we have 4 devices in the T building.
+- schedule the meetings using the server for rooms; t125, t108, t307
+- public / local access switch
+- system installation module
+- implications of leaving the charger in the tablet
+- patientway vs way finder. which one is easier to put inand why
+- touch capability still present
+- sit down with hardware guy to see how to mount the actual tablet.
+- people should not be able to leave the app.
+- 2 different versions. 
+- front page swipes different ads as it goes.
+- what are the potential markets for this application? generate a report.
+- support for very large screens
+- zoom in capabilities
+- path finding on generic is important, but only for the setup. not the pathfinder build by college.
+- hospital setting?
+- rideau center replace the billboards with massive touch screens
+- limit the scope!
+- cloud and local setup
+- we need GIT

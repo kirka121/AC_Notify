@@ -25,9 +25,10 @@ DROP TABLE IF EXISTS `devices`;
 CREATE TABLE `devices` (
   `device_id` varchar(45) NOT NULL,
   `device_location` varchar(45) DEFAULT NULL,
-  `device_is_custom_profile` int(11) DEFAULT NULL,
   `device_profile` int(11) DEFAULT NULL,
   `custom_profile_html` longtext,
+  `device_name` varchar(45) DEFAULT NULL,
+  `device_android_version` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`device_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -38,7 +39,7 @@ CREATE TABLE `devices` (
 
 LOCK TABLES `devices` WRITE;
 /*!40000 ALTER TABLE `devices` DISABLE KEYS */;
-INSERT INTO `devices` VALUES ('bfd37b493c922758','somewhere',0,1,'null');
+INSERT INTO `devices` VALUES ('75c7e03c13598320','T125',2,'THIS IS A CUSTOM PROFILE','Tester\'s Android','4.0.4'),('bfd37b493c922758',' T125',1,NULL,'Ed\'s Android','4.1.1');
 /*!40000 ALTER TABLE `devices` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -63,7 +64,7 @@ CREATE TABLE `profiles` (
 
 LOCK TABLES `profiles` WRITE;
 /*!40000 ALTER TABLE `profiles` DISABLE KEYS */;
-INSERT INTO `profiles` VALUES (1,'some content here',0),(2,'some more content here',0);
+INSERT INTO `profiles` VALUES (1,'This device is running some weird weird font setting that i still haven\'t made up my mind about liking it.',0),(2,'This device is running default setting, and i like that very very much.',0);
 /*!40000 ALTER TABLE `profiles` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -129,4 +130,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2013-06-01 12:20:06
+-- Dump completed on 2013-06-03 12:55:29
