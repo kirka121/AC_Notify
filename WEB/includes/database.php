@@ -1,10 +1,9 @@
 <?php
 class db_operations{
-// class responsible for all the database operations. all your queries should be here.
+// responsible for all the database operations. all your SQL queries and logic should be here.
 	var $connection;
 
 	function db_operations(){
-		//default constructor.
 		// \/ establish connection to db
 		$this->connection = mysql_connect(CONNECTION_SERVER, CONNECTION_USER, CONNECTION_PASS) or die("no connection to db.");
 		// \/ select database
@@ -14,32 +13,33 @@ class db_operations{
 	function get_html($id){
 		// \/ load the query
 		$query = "";
-		if(!$this->check_custom_profile($id)){
-			// if not custom profile
+		if(!$this->is_custom_profile($id)){
+			// no custom profile set, prepare query to fetch specific profile
 			$query = "select profile_html from profiles where profile_id = (select device_profile from devices where device_id = '".$id."')";
 		} else {
-			// if is custom profile
+			// there is custom profile data, prepare query to fetch custom profile
 			$query = "select custom_profile_html from devices where device_id = '".$id."'";
 		}
 		$result = mysql_query($query, $this->connection);
-		// \/ return the result in an array
+		// \/ return the result in an array, itterate through each row of the result array (once)
 		while($row = mysql_fetch_array($result)){
-			if(!$this->check_custom_profile($id)){
+			if(!$this->is_custom_profile($id)){
+				// return 
 				return $row['profile_html'];
 			}else{
 				return $row['custom_profile_html'];
 			}
 		}
 		// \/ close connection
-		$this->close_connection();
+		//$this->close_connection();
 	}
 
-	function check_custom_profile($id){
+	function is_custom_profile($id){
 		// if device has custom profile, returns true, else returns false.
 		$query = "select custom_profile_html from devices where device_id = '".$id."'";
 		$result = mysql_query($query, $this->connection);
-		$answer = mysql_fetch_array($result);
-		if($answer['custom_profile_html'] != null && $answer['custom_profile_html'] != 0){
+		$cell = mysql_fetch_array($result);
+		if($cell['custom_profile_html'] != null && $cell['custom_profile_html'] != 0){
 			return true;
 		}else{
 			return false;
@@ -49,7 +49,7 @@ class db_operations{
 
 	function close_connection(){
 		// \/ close connection
-		mysql_close($this->connection);
+		//mysql_close($this->connection);
 	}
 
 }

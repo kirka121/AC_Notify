@@ -4,9 +4,9 @@
 					Thom Palmer, 
 					Adam Etherington
 	Technologies:	Android 4.0.3 Ice Cream Sandwitch 
-					PHP 5.4.7
+					PHP 5.4.14
 					jQuery 1.9.1
-					MySql 5.2
+					MySql 5.6.11
 	GitHub Repo: 	https://github.com/kirka121/AC_Notify
 	Version: 		1.0.12
 -->
