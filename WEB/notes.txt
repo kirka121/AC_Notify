@@ -1,32 +1,31 @@
 notes:
+TERMS: 	Algonquin version: the version of classroom portal written to date. works with algonquin network only
+		Notify / Generic version: the new version which is to be coded. works with anything, anywhere. works for multiple purposes, is 99% web based.
 
 lena, penny; in charge of the marketing.
 
 key necessities:
 - contract of scope
-- stuff that patientway has in order to do routing
-- very generic, for hi-rise or commercial set ups
-- monitor the usage of the devices to gather information about best use cases (LOG ALL THE THINGS!!!) 
+- take a look at patientway, see if can incorporate into Algonquin version of classroom portal for routing
+- make very generic version, for hi-rise building or commercial set ups
+- monitor the usage of the devices to gather information about best use cases 		(LOG ALL THE THINGS!!!) 
 
 extra:
 - front page needs to be either a time table or a generic sign / html
 - we have 4 devices in the T building.
-- schedule the meetings using the server for rooms; t125, t108, t307
-- public / local access switch
-- system installation module
-- implications of leaving the charger in the tablet
-- patientway vs way finder. which one is easier to put inand why
-- touch capability still present
+- schedule the meetings using the server for rooms; t125, t108, t307 				(algonquin version)
+- public / local access switch														(generic version)
+- system installation module														(generic version)
+- research the implications of leaving the charger in the tablet
+- research patientway vs way finder. which one is easier to put in for routing and why
+- touch capability still present, we need to disable ability to exit application	(both)
 - sit down with hardware guy to see how to mount the actual tablet.
-- people should not be able to leave the app.
-- 2 different versions. 
-- front page swipes different ads as it goes.
+- front page swipes different ads as it goes.										(generic, optional)
 - what are the potential markets for this application? generate a report.
 - support for very large screens
 - zoom in capabilities
-- path finding on generic is important, but only for the setup. not the pathfinder build by college.
+- path finding on generic is important, but only for the setup. not the pathfinder build by college. (e.g dont stress over pathfinder for generic.)
 - hospital setting?
-- rideau center replace the billboards with massive touch screens
+- rideau center replace the billboards for routefinding with massive touch screens, for interactive UI
 - limit the scope!
-- cloud and local setup
 - we need GIT

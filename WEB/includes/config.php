@@ -1,5 +1,5 @@
 <?php
-
+// string file for sql statements
 if(getenv("VCAP_SERVICES")){
  	//for webserver with vpcap services
 	$services_json = json_decode(getenv("VCAP_SERVICES"),true);

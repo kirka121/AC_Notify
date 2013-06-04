@@ -30,8 +30,7 @@ class db_operations{
 				return $row['custom_profile_html'];
 			}
 		}
-		// \/ close connection
-		//$this->close_connection();
+		$this->close_connection();
 	}
 
 	function is_custom_profile($id){
@@ -49,7 +48,7 @@ class db_operations{
 
 	function close_connection(){
 		// \/ close connection
-		//mysql_close($this->connection);
+		mysql_close($this->connection);
 	}
 
 }
