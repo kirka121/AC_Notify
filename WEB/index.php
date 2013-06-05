@@ -8,7 +8,7 @@
 					jQuery 1.9.1
 					MySql 5.6.11
 	GitHub Repo: 	https://github.com/kirka121/AC_Notify
-	Version: 		1.0.12
+	Version: 		1.0.13
 -->
 <?php 
 include_once("includes/config.php");
@@ -41,10 +41,10 @@ error_reporting(E_ALL); 	//allow error reporting in case webserver's default pre
 				// \/ identify which module to include in content
 				if (!isset($_GET['op'])) { 
 					include("modules/home.php"); 
-				} else {
-			      	if (is_file("modules/".$_GET['op'].".php")) {
+				}else{
+			      	if(is_file("modules/".$_GET['op'].".php")){
 			      		include("modules/".$_GET['op'].".php");
-			      	} else {
+			      	}else{
 			      		$red_notification_box->display('Module could not be found.');	
 			      	}
 				}
