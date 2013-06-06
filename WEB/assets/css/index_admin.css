@@ -1,0 +1,80 @@
+body{
+    background: #ffffff;
+    background-image: url("../img/pattern.jpg"); 
+    color: #ffffff;
+    font-family: Calibri;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+div#container{
+    width: 100%;
+}
+div#header{
+    height: 100px;
+    background-image: url("../img/header.png");
+    vertical-align: middle;
+}
+div#login_block fieldset{
+    border: none;
+}
+div#login_block{
+    border: 1px solid black;
+    background: #464545;
+    width: 350px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 100px;
+    text-align: center;
+}
+div#login_block input[type=text], div#login_block input[type=password]{
+    margin: 0 auto;
+    display: block;
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+    width: 250px;
+    padding: 10px 18px 10px 10px;
+    border: none;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.1), inset 0 3px 2px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    background: #f9f9f9;
+    color: #777;
+    -webkit-transition: color 0.3s ease-out;
+    -moz-transition: color 0.3s ease-out;
+    -ms-transition: color 0.3s ease-out;
+    -o-transition: color 0.3s ease-out;
+    transition: color 0.3s ease-out;
+}
+div#login_block input:focus { 
+    border: 1px dotted black; 
+}
+div#login_block input.error { 
+    border: 1px dotted red; 
+}
+div#login_block form#admin_login_form label.error{
+    width: auto;
+    display: inline;
+    color: red;
+    font-size: 12px;
+
+}
+div#header_container{
+    margin: 0 auto;
+    width: 100%;
+    vertical-align: middle;
+}
+div#header_container img{
+    vertical-align: middle;
+}
+div#header_tabs_container{
+    padding-right: 15px;
+    position: absolute;
+    right: 0;
+    top: 15;
+    display: inline-block;
+    text-align: right;
+    margin-left: 150px;
+}

@@ -32,6 +32,7 @@ error_reporting(E_ALL); 	//allow error reporting in case webserver's default pre
 						<?php 
 							$tab->create('home');
 							$tab->create('navigation'); 
+							$tab->create_folder('admin');
 						?>
 					</div>
 				</div>

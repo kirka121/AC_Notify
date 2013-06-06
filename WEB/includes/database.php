@@ -38,7 +38,7 @@ class db_operations{
 		$query = "select custom_profile_html from devices where device_id = '".$id."'";
 		$result = mysql_query($query, $this->connection);
 		$cell = mysql_fetch_array($result);
-		if($cell['custom_profile_html'] != null && $cell['custom_profile_html'] != 0){
+		if($cell['custom_profile_html'] != null || $cell['custom_profile_html'] != 0){
 			return true;
 		}else{
 			return false;

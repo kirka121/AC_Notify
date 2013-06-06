@@ -39,6 +39,9 @@ class tab{
 		}
 		echo ">".$title."</div></a>";
 	}
+	function create_folder($title){
+		echo "<a href='/".$title."' target='_blank'><div class='header_tabs_divs'>".$title."</div></a>";
+	}
 }
 $tab = new tab;
 ?>
