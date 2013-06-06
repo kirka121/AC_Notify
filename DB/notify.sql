@@ -58,7 +58,7 @@ CREATE TABLE `admin_active_users` (
 
 LOCK TABLES `admin_active_users` WRITE;
 /*!40000 ALTER TABLE `admin_active_users` DISABLE KEYS */;
-INSERT INTO `admin_active_users` VALUES ('Kirka',1370535918);
+INSERT INTO `admin_active_users` VALUES ('Kirka',1370541621);
 /*!40000 ALTER TABLE `admin_active_users` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -109,7 +109,7 @@ CREATE TABLE `admin_users` (
 
 LOCK TABLES `admin_users` WRITE;
 /*!40000 ALTER TABLE `admin_users` DISABLE KEYS */;
-INSERT INTO `admin_users` VALUES ('Kirka','c47fe7baa30e167fd8713601a6ecd85a','901d4b5ce486abe37a969c0a5b650615',9,'kirka121@gmail.com',1370535918);
+INSERT INTO `admin_users` VALUES ('Kirka','c47fe7baa30e167fd8713601a6ecd85a','86fb75c15f249c617fe73086d2a1b1e5',9,'kirka121@gmail.com',1370541621),('tester','f5d1278e8109edd94e1e4197e04873b9','880ee38c7d3e6a915fdcb6d8a44b09f8',1,'tester@tester.com',1370537623);
 /*!40000 ALTER TABLE `admin_users` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -228,4 +228,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2013-06-06 12:25:34
+-- Dump completed on 2013-06-06 14:00:26
