@@ -8,7 +8,7 @@
 					jQuery 1.9.1
 					MySql 5.6.11
 	GitHub Repo: 	https://github.com/kirka121/AC_Notify
-	Version: 		1.0.13
+	Version: 		1.0.17
 -->
 <?php 
 include_once("includes/config.php");

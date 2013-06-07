@@ -2,7 +2,7 @@ notes:
 TERMS: 	Algonquin version: the version of classroom portal written to date. works with algonquin network only
 		Notify / Generic version: the new version which is to be coded. works with anything, anywhere. works for multiple purposes, is 99% web based.
 
-lena, penny; in charge of the marketing.
+Lina, Patti [head], Allison; in charge of the marketing.
 
 key necessities:
 - contract of scope
@@ -29,3 +29,15 @@ extra:
 - rideau center replace the billboards for routefinding with massive touch screens, for interactive UI
 - limit the scope!
 - we need GIT
+
+
+
+meeting number 2:
+- research -> user focused 
+- doing mostly marketing
+- marketing people will contribute to feature building, we should listen to this
+- weekly meeting at 2:00pm Monday with the marketing team - Here | portal demo as well
+- provide scoping documents
+- provide a detailed description for the project itself.
+- the graphic designer will be coming in towards the end of the project, in order to create the GUI and pass it on to us
+- SCRUM meetings with Stan every week monday morning at 10:30am.
